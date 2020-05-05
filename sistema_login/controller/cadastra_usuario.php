@@ -1,11 +1,11 @@
 <?php
-    include "conexao.php";
+    include "../model/conexao.php";
 ?>
 <!DOCTYPE HTML>
 <html>
     <head>
         <title>Sistema de Login e Senha Criptografados</title>
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" />
     </head>
     <body>
         <div id="conteudo">
@@ -43,7 +43,7 @@
                 {
                     $insereDados = mysqli_query($conecta, "INSERT INTO tblusuario(nome_tblusuario, email_tblusuario, senha_tblusuario) VALUES('$filtraNome','$filtraEmail','$criptoSenha')");
                     echo "<p>Seu Cadastro foi efetuado com sucesso!</p>";
-                    echo "<p><a href='index.php'> <- Voltar</a></p>";
+                    echo "<p><a href='../index.php'> <- Voltar</a></p>";
                 }
             ?>
         </div>

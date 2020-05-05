@@ -1,13 +1,13 @@
 <?php
     session_start();
-    include "conexao.php";
+    include "../model/conexao.php";
 ?>
 
 <!DOCTYPE HTML>
 <html>
     <head>
         <meta charset="utf-8"/>
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" />
         <title>Sistema de Login e Senha Criptografados </title>
     </head>
     <body>
@@ -19,7 +19,7 @@
                 <h1><span class="destaca"><?php echo $_SESSION['nome_usuario']; ?></span>, seja bem-vindo ao Conteúdo Exclusivo</h1>
                 <div class="borda"></div>
                 <div class="logout">
-                    <p class="sairSistema"><a href="logout.php">Clique aqui</a> para sair do sistema</p>
+                    <p class="sairSistema"><a href="../controller/logout.php">Clique aqui</a> para sair do sistema</p>
                 </div>
                 <div class="clear"></div>
                 <h3>Conteúdo Exclusivo 01 </h3>

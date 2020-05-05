@@ -9,8 +9,8 @@
             <h1>Sistema de login e senha criptografados - Acesso ao Conteúdo Exlusivo</h1>
             <div class="borda"></div>
             <p>Para ter acesso ao <strong>Conteúdo Exclusivo</strong>, por favor, logue-se utilizando o formulário abaixo!</p>
-            <p>Ainda não é cadastrado em nosso sistema, <a href="cadastro.php">cadastre-se</a>!</p>
-            <form method="post" action="valida_acesso.php" id="valida_Acesso">
+            <p>Ainda não é cadastrado em nosso sistema, <a href="view/cadastro.php">cadastre-se</a>!</p>
+            <form method="post" action="controller/valida_acesso.php" id="valida_Acesso">
                 <fieldset>
                     <legend>Login</legend>
                     <label for ="email">E-mail:</label>
@@ -22,7 +22,7 @@
                     <input type="submit" value="Acessar o sistema"/>
                 </fieldset>
             </form>
-            <p><small>Esqueceu seus dados? <a href="fsenha.php">Clique aqui!</a></small></p> 
+            <p><small>Esqueceu seus dados? <a href="view/fsenha.php">Clique aqui!</a></small></p> 
         </div>
     </body>
 </html>

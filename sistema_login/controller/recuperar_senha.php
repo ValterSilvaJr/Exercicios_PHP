@@ -1,5 +1,5 @@
 <?php
-    include "conexao.php";
+    include "../model/conexao.php";
     $recebeEmail = $_POST['email'];
     $filtraEmail = filter_var($recebeEmail, FILTER_SANITIZE_SPECIAL_CHARS);
     $filtraEmail = filter_var($recebeEmail, FILTER_SANITIZE_MAGIC_QUOTES);
@@ -15,7 +15,7 @@
 <html>
     <head>
         <meta charset = "utf-8" />
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" />
         <title>Sistema de Login e Senha Criptografados</title>
     </head>
     <body>
@@ -24,14 +24,14 @@
                 <h2>E-mail inválido!</h2>
                 <p>Desculpe, mas o e-mail solicitado não &eacute; cadastrado.</p>
                 <p>Entre em contato com o administrador do sistema.<br>
-                Se quiser tentar novamente, <a href="fsenha.php">clique aqui</a>.</p>
+                Se quiser tentar novamente, <a href="../view/fsenha.php">clique aqui</a>.</p>
                 <p>Obrigado.</p>
             <?php } 
             else {
                 $result = mysqli_fetch_array($sql_query);
                 $id_usuario = $result['id_tblusuario'];
-                $nome = $linha['nome_tblusuario'];
-                $email = $linha['email'];
+                $nome = $result['nome_tblusuario'];
+                $email = $result['email_tblusuario'];
                 
                 function geraSenha($tamanho = 8, $maiusculas = true, $numeros = true, $simbolos = false)
                 {
@@ -72,7 +72,7 @@
                 <h2>Senha Enviada!</h2>
                 <p>Parabéns. Sua senha foi enviada para o e-mail solicitado.</p>
                 <p>Após verificar seu e-mail, retorne à página de login.</p>
-                <p>Se preferir, <a href="index.php">clique aqui</a>.</p>
+                <p>Se preferir, <a href="../index.php">clique aqui</a>.</p>
                 <p>Obrigado</p>
             <?php } ?>
         </div>  

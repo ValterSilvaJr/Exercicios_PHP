@@ -1,6 +1,6 @@
 <?php
     session_start();
-    include 'conexao.php';
+    include '../model/conexao.php';
 ?>
 
 <!DOCTYPE HTML>
@@ -8,7 +8,7 @@
 <html lang="br" class="no-js">
     <head>
         <title>Sistema de Login e Senha Criptografados</title>
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" />
     </head>
     <body>
         <div id="conteudo">
@@ -41,7 +41,7 @@
                         $_SESSION['login'] = true;
                         $_SESSION['nome_usuario'] = $result['nome_tblusuario'];
                         $_SESSION['permissao'] = $result['permissao_tblusuario'];
-                        header("Location: conteudo_exclusivo.php");
+                        header("Location: ../view/conteudo_exclusivo.php");
                     }
                 }
                 else

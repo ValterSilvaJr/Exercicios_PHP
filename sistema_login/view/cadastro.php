@@ -3,14 +3,14 @@
     <head>
         <meta charset = "utf-8">
         <title>Sistema de Login e Senha Criptografados</title>
-        <link href="css/style.css" rel="stylesheet" />
+        <link href="../css/style.css" rel="stylesheet" />
     </head>
     <body>
         <div id="conteudo">
             <h1>Sistema de login e senha criptografados - Cadastro de usuário</h1>
             <div class="borda"></div>
             <p>Para ter acesso ao conteúdo exclusivo, por favor, cadastre-se utilizando o formulário abaixo!</p>
-            <form method="post" action="cadastra_usuario.php" id="validaAcesso">
+            <form method="post" action="../controller/cadastra_usuario.php" id="validaAcesso">
                 <fieldset>
                     <legend>Faça seu cadastro abaixo</legend>
                     <label for="nome">Seu nome</label>
@@ -25,7 +25,7 @@
                     <input type="submit" value="Efetuar Cadastro" />
                 </fieldset>
             </form>
-            <p>Se você já possui cadastro, <a href="index.php">clique aqui</a> para acessar o Conteúdo Exclusivo!</p>
+            <p>Se você já possui cadastro, <a href="../index.php">clique aqui</a> para acessar o Conteúdo Exclusivo!</p>
         </div>
     </body>
 </html>
