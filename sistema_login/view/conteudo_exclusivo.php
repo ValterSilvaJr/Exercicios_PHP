@@ -21,6 +21,10 @@
                 <div class="logout">
                     <p class="sairSistema"><a href="../controller/logout.php">Clique aqui</a> para sair do sistema</p>
                 </div>
+                <div class='clear'></div>
+                <div class="logout">
+                    <p class="sairSistema"><a href="conteudo.php">Atualizar Dados</a></p>
+                </div>
                 <div class="clear"></div>
                 <h3>Conteúdo Exclusivo 01 </h3>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque id porro reprehenderit obcaecati dolorum, accusamus aut sequi iusto explicabo officia nemo. Quaerat vel hic dolorem suscipit delectus voluptas nisi quod? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sequi omnis sed corrupti dignissimos, necessitatibus ut ipsa placeat fugiat. Quam minus autem vero officiis voluptas illo commodi accusantium velit architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, culpa ipsum nisi voluptas veniam accusamus expedita cum nemo! Iste officia sequi aut odit odio doloribus laudantium eaque incidunt itaque nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure suscipit eaque, modi facere amet id quaerat placeat quo mollitia consequuntur laboriosam voluptatem delectus omnis dignissimos quasi quidem, corporis quae nesciunt?</p>

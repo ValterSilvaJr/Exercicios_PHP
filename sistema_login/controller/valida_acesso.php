@@ -40,6 +40,7 @@
                     {
                         $_SESSION['login'] = true;
                         $_SESSION['nome_usuario'] = $result['nome_tblusuario'];
+                        $_SESSION['id'] = $result['id_tblusuario'];
                         $_SESSION['permissao'] = $result['permissao_tblusuario'];
                         header("Location: ../view/conteudo_exclusivo.php");
                     }
