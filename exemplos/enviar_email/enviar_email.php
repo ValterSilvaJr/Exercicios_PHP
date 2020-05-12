@@ -34,6 +34,7 @@
     $msg = "<strong> Nome:</strong> $nome<br>";
     $msg .= "<strong> E-mail:</strong> $email<br>";
     $msg .= "<strong> Mensagem:</strong> $texto<br>";
+    // $recipient = "root@localhost.com";
     $recipient = "taikdow@hotmail.com";
     $subject = "Contato Website";
     $header = "MIME-Version: 1.0\r\n";

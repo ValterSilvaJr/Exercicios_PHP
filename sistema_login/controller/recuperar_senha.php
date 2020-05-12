@@ -55,10 +55,10 @@
                     }
                     return $retorno;
                 }
-                $nova_senha = geraSenha(9, true, false);
-                $senhamd5 = md5($nova_senha);
+                $nova_senha = geraSenha(12, true, false);
+                $criptoSenha = md5($nova_senha);
 
-                $query = "UPDATE tblusuario SET senha_tblusuario = '$senhamd5' WHERE id_usuario = " . $id_usuario;
+                $query = "UPDATE tblusuario SET senha_tblusuario = '$criptoSenha' WHERE id_tblusuario = '$id_usuario'";
                 $rs = mysqli_query($conecta, $query);
                 $formato = "\n Content-type: text/html";
                 $msg = "Olá, $nome. Recebemos uma solicitação para renovar sua senha.<br><br>";
