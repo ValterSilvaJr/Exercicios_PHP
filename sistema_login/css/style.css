@@ -121,7 +121,7 @@ p {
     color: #036;
     margin: 0 auto;
 }
-.dheader {
+.dheader, .dheader2 {
     float: left;
     width: 250px;
     text-align: center;
@@ -129,22 +129,50 @@ p {
     background-color: #c3c3c3;
     margin: 2px;
 }
+.dheader2 {
+    width: 50px;
+}
 .content {
     width: 260px;
     
+}
+.content2 {
+    width: 20px;
 }
 .content_last1 {
     width: 120px;
     text-align: center;
 }
-.content, .content_last1 {
+.content, .content2, .content_last1 {
     float: left;
     border-bottom: 1px solid #e1e1e1;
     margin: 15px auto;
+}
+.qtde {
+    margin-top: 20px;
+    font-size: 80%;
+    color: #039;
+}
+.qtde_last{
+    margin-bottom: 20px;
+    font-size: 80%;
+    color: #039;
 }
 .link {
     text-decoration: none;
 }
 .link:hover{
     color: tomato;
+}
+.pdf_content, .pdf_content2{
+    float: left;
+    border-bottom: 1px solid #e1e1e1;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.pdf_content {
+    width: 247px;
+}
+.pdf_content2{
+    width: 60;
 }

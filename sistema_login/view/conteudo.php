@@ -31,7 +31,8 @@
                         <div class="content_last1"><a class="link" href="fupdate.php?id=<?php echo $result['id_tblusuario'] ?>">Atualizar</a></div>
                         <div class="content_last1"><a class="link" href="../controller/delete_dados_usuario.php?id=<?php echo $result['id_tblusuario'] ?>">Excluir</a></div>
                         <div class="clear"></div>
-            <?php   } 
+            <?php   }
+                echo "<p>Para gerar um relatorio <a href='../controller/gerar_pdf.php' target='_blank'>Clique aqui</a></p>"; 
                 } else {
                     header("Location: fupdate.php");
                 } 
