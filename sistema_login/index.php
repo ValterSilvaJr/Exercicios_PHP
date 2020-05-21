@@ -1,6 +1,3 @@
-<?php
-    define('ROOT_PATH', dirname(__FILE__));
-?>
 <!DOCTYPE HMTL>
 <html lang="br" class="no-js">
     <head>
